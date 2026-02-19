@@ -1,7 +1,6 @@
 const { getUniTVL } = require('../helper/unknownTokens')
 
 module.exports = {
-  start: 411656,
   oasis: {
     tvl: getUniTVL({
       factory: '0xa25464822b505968eEc9A45C43765228c701d35f',
@@ -11,7 +10,7 @@ module.exports = {
   },
   misrepresentedTokens: true,
   hallmarks: [
-    [1681743600,"Remove Fake USDT"],
-    [1654214400, "EvoDefi bridge depeg"]
+    ['2023-04-17',"Remove Fake USDT"],
+    ['2022-06-03', "EvoDefi bridge depeg"]
   ],
 };

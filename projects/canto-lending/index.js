@@ -25,8 +25,7 @@ const addresses = {
 }
 
 const chain = 'canto'
-const checkForLPTokens = i => /vAMM/.test(i)
-const compoundData = compoundExports(addresses.Comptroller, chain, addresses.CCANTO, addresses.WCANTO, undefined, checkForLPTokens, { blacklistedTokens:[ 
+const compoundData = compoundExports(addresses.Comptroller, addresses.CCANTO, addresses.WCANTO, { blacklistedTokens:[ 
   addresses.Note,
   addresses.NOTE_WCANTO,
   addresses.ETH_WCANTO,
@@ -37,7 +36,7 @@ const compoundData = compoundExports(addresses.Comptroller, chain, addresses.CCA
 
 module.exports = {
   hallmarks: [
-    [1661417246, "Remove canto dex LPs from tvl computation"]
+    ['2022-08-25', "Remove canto dex LPs from tvl computation"]
   ],
   canto: compoundData
 }
